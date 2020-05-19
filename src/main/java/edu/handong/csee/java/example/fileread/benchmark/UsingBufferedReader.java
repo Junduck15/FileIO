@@ -17,7 +17,7 @@ public class UsingBufferedReader {
         while (inputStream.read()!=-1){}
 
         long duration = StopWatch.stop();
-        System.out.println(duration + " milsec");
+        System.out.println(args[0]+" "+ duration + " milsec");
         
         inputStream.close();
 
@@ -30,7 +30,7 @@ public class UsingBufferedReader {
         while (inputStream2.read()!=-1){}
 
         long duration2 = StopWatch.stop();
-        System.out.println(duration2 + " milsec");
+        System.out.println(args[1]+" " + duration2 + " milsec");
 
         inputStream2.close();
 
